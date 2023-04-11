@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include dongwoo *.css
+recursive-include dongwoo *.csv
+recursive-include dongwoo *.html
+recursive-include dongwoo *.ico
+recursive-include dongwoo *.js
+recursive-include dongwoo *.json
+recursive-include dongwoo *.md
+recursive-include dongwoo *.png
+recursive-include dongwoo *.py
+recursive-include dongwoo *.svg
+recursive-include dongwoo *.txt
+recursive-exclude dongwoo *.pyc
