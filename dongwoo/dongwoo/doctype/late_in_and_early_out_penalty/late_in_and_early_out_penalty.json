@@ -1,0 +1,142 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "LE-.####",
+ "creation": "2023-12-21 13:33:00.507179",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "designation",
+  "column_break_vnttz",
+  "employee_name",
+  "section_break_77k75",
+  "from_date",
+  "column_break_3cv6t",
+  "to_date",
+  "section_break_bnybm",
+  "total_no_of_late_in",
+  "total_no_of_late_deductions_day",
+  "section_break_hscw1",
+  "total_no_of_early_out",
+  "late_penalty_day",
+  "section_break_pqznh",
+  "leave_deduction",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation"
+  },
+  {
+   "fieldname": "column_break_vnttz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "section_break_77k75",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "column_break_3cv6t",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "section_break_bnybm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_no_of_late_in",
+   "fieldtype": "Int",
+   "label": "No Of Late In"
+  },
+  {
+   "fieldname": "total_no_of_late_deductions_day",
+   "fieldtype": "Int",
+   "label": "Total no of Late Deduction Days"
+  },
+  {
+   "fieldname": "section_break_hscw1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_no_of_early_out",
+   "fieldtype": "Int",
+   "label": "No Of Early Out"
+  },
+  {
+   "fieldname": "late_penalty_day",
+   "fieldtype": "Float",
+   "label": "Late Penalty Day"
+  },
+  {
+   "fieldname": "section_break_pqznh",
+   "fieldtype": "Section Break",
+   "label": "Leave Deduction"
+  },
+  {
+   "fieldname": "leave_deduction",
+   "fieldtype": "Table",
+   "options": "Leave Allocated"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Late In And Early Out Penalty",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-12-21 20:22:52.118817",
+ "modified_by": "Administrator",
+ "module": "DONGWOO",
+ "name": "Late In And Early Out Penalty",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

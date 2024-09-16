@@ -1,0 +1,335 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "AP.####",
+ "creation": "2023-04-10 13:48:23.037746",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "department",
+  "designation",
+  "contractor",
+  "column_break_p2iwr",
+  "employee_type",
+  "work_spot",
+  "working_location",
+  "grade",
+  "section_break_myvnc",
+  "permission_date",
+  "shift",
+  "column_break_genhd",
+  "session",
+  "permission_hour",
+  "permission_from_time",
+  "permission_to_time",
+  "total_time",
+  "section_break_ixmqp",
+  "company",
+  "status",
+  "column_break_sa08n",
+  "reason",
+  "approvers_section",
+  "total_number_of_approvers",
+  "level_1_approver",
+  "level_2_approver",
+  "level_3_approver",
+  "level_4_approver",
+  "level_5_approver",
+  "column_break_daa7y",
+  "level_6_approver",
+  "level_7_approver",
+  "level_8_approver",
+  "level_9_approver",
+  "level_10_approver",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.first_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "permission_date",
+   "fieldtype": "Date",
+   "label": "Permission Date ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "session",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Session",
+   "options": "\nFirst Half\nSecond Half\nFull Day\nFlexible",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_p2iwr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_time",
+   "fieldtype": "Data",
+   "label": "Total Time",
+   "read_only_depends_on": "eval:doc.session != \"Flexible\""
+  },
+  {
+   "fieldname": "section_break_ixmqp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Open\nApproved\nRejected\nCancelled"
+  },
+  {
+   "fieldname": "column_break_sa08n",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Small Text",
+   "label": "Reason",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.designation",
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "work_spot",
+   "fieldtype": "Data",
+   "label": "Work Spot",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.working_location",
+   "fieldname": "working_location",
+   "fieldtype": "Data",
+   "label": "Working Location",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_myvnc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "shift",
+   "fieldtype": "Select",
+   "label": "Shift",
+   "options": "\nA\nB\nC",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.employment_type",
+   "fieldname": "employee_type",
+   "fieldtype": "Data",
+   "label": "Employee Type",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.session != \"Flexible\"",
+   "fieldname": "permission_hour",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Permission Hour",
+   "mandatory_depends_on": "eval:doc.session != \"Flexible\"",
+   "options": "\n1 Hour\n2 Hours\n3 Hours\n4 Hours"
+  },
+  {
+   "fetch_from": "employee.grade",
+   "fieldname": "grade",
+   "fieldtype": "Link",
+   "label": "Grade",
+   "options": "Employee Grade",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_genhd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Permission",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.session == \"Flexible\"",
+   "fieldname": "permission_from_time",
+   "fieldtype": "Time",
+   "label": "Permission From Time"
+  },
+  {
+   "depends_on": "eval:doc.session == \"Flexible\"",
+   "fieldname": "permission_to_time",
+   "fieldtype": "Data",
+   "label": "Permission To Time"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "approvers_section",
+   "fieldtype": "Section Break",
+   "label": "Approvers"
+  },
+  {
+   "fetch_from": "employee.level_1_approver",
+   "fieldname": "level_1_approver",
+   "fieldtype": "Link",
+   "label": "Level 1 Approver",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.level_2_approver",
+   "fieldname": "level_2_approver",
+   "fieldtype": "Link",
+   "label": "Level 2 Approver",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.level_3_approver",
+   "fieldname": "level_3_approver",
+   "fieldtype": "Link",
+   "label": "Level 3 Approver",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.level_4_approver",
+   "fieldname": "level_4_approver",
+   "fieldtype": "Link",
+   "label": "Level 4 Approver",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.level_5_approver",
+   "fieldname": "level_5_approver",
+   "fieldtype": "Link",
+   "label": "Level 5 Approver",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_daa7y",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee.level_6_approver",
+   "fieldname": "level_6_approver",
+   "fieldtype": "Link",
+   "label": "Level 6 Approver",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.level_7_approver",
+   "fieldname": "level_7_approver",
+   "fieldtype": "Link",
+   "label": "Level 7 Approver",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.level_8_approver",
+   "fieldname": "level_8_approver",
+   "fieldtype": "Link",
+   "label": "Level 8 Approver",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.level_9_approver",
+   "fieldname": "level_9_approver",
+   "fieldtype": "Link",
+   "label": "Level 9 Approver",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.level_10_approver",
+   "fieldname": "level_10_approver",
+   "fieldtype": "Link",
+   "label": "Level 10 Approver",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "total_number_of_approvers",
+   "fieldtype": "Int",
+   "label": "Total Number of Approvers",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.contractor",
+   "fieldname": "contractor",
+   "fieldtype": "Data",
+   "label": "Contractor",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-08-20 14:16:09.776887",
+ "modified_by": "Administrator",
+ "module": "DONGWOO",
+ "name": "Permission",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

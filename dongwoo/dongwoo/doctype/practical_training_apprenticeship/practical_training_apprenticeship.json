@@ -1,0 +1,52 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-05-11 18:20:56.365305",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name_of_institute__firm",
+  "from_period",
+  "to_period",
+  "nature_of_training"
+ ],
+ "fields": [
+  {
+   "fieldname": "name_of_institute__firm",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name Of Institute /Firm"
+  },
+  {
+   "fieldname": "from_period",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "From Period"
+  },
+  {
+   "fieldname": "to_period",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "To Period "
+  },
+  {
+   "fieldname": "nature_of_training",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nature Of Training"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-05-11 18:24:24.639261",
+ "modified_by": "Administrator",
+ "module": "DONGWOO",
+ "name": "Practical Training Apprenticeship",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

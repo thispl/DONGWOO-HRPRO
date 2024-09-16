@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-11-10 10:27:11.490335",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "year",
+  "cl",
+  "sl",
+  "el",
+  "total"
+ ],
+ "fields": [
+  {
+   "fieldname": "cl",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "CL"
+  },
+  {
+   "fieldname": "sl",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "SL"
+  },
+  {
+   "fieldname": "el",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "EL"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Total"
+  },
+  {
+   "fieldname": "year",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Year",
+   "options": "Fiscal Year"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-11-10 11:12:18.494936",
+ "modified_by": "Administrator",
+ "module": "DONGWOO",
+ "name": "Leave Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

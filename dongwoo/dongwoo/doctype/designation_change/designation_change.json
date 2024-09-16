@@ -1,0 +1,69 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-01 14:16:06.315613",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "from_designation",
+  "to_designation",
+  "period",
+  "from_date",
+  "to_date",
+  "reason_for_change"
+ ],
+ "fields": [
+  {
+   "fieldname": "period",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Period",
+   "options": "Fiscal Year"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "reason_for_change",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Reason For Change "
+  },
+  {
+   "fieldname": "from_designation",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Designation ",
+   "options": "Designation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to_designation",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "To Designation ",
+   "options": "Designation"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-12-20 10:43:36.021626",
+ "modified_by": "Administrator",
+ "module": "DONGWOO",
+ "name": "Designation Change",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

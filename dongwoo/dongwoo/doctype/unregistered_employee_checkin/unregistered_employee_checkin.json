@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "autoname": "UREC.#####",
+ "creation": "2023-07-11 15:35:42.494462",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "biometric_pin",
+  "biometric_time",
+  "column_break_3",
+  "locationdevice_id",
+  "log_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "biometric_pin",
+   "fieldtype": "Data",
+   "label": "Biometric PIN",
+   "read_only": 1
+  },
+  {
+   "fieldname": "biometric_time",
+   "fieldtype": "Datetime",
+   "label": "Biometric Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "locationdevice_id",
+   "fieldtype": "Data",
+   "label": "Location/Device ID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "log_type",
+   "fieldtype": "Data",
+   "label": "Log Type",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-16 01:18:55.406784",
+ "modified_by": "Administrator",
+ "module": "DONGWOO",
+ "name": "Unregistered Employee Checkin",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

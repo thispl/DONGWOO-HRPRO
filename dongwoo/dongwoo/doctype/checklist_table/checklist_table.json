@@ -1,0 +1,41 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-07-06 18:12:57.187428",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "description",
+  "select"
+ ],
+ "fields": [
+  {
+   "fieldname": "description",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Description",
+   "options": "Vehicle Check List"
+  },
+  {
+   "fieldname": "select",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Select",
+   "options": "YES\nNO",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-07-06 20:37:59.011928",
+ "modified_by": "Administrator",
+ "module": "DONGWOO",
+ "name": "Checklist Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

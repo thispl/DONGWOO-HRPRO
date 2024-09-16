@@ -1,0 +1,46 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-04-10 14:26:25.454526",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name_of_reward",
+  "date_and_year",
+  "reason"
+ ],
+ "fields": [
+  {
+   "fieldname": "name_of_reward",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name Of Reward ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_and_year",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date And Year"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Reason"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-04-11 11:02:55.212236",
+ "modified_by": "Administrator",
+ "module": "DONGWOO",
+ "name": "Rewards And Recognition",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

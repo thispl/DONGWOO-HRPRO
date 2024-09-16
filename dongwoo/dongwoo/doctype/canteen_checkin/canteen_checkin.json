@@ -1,0 +1,143 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "CC.####",
+ "creation": "2023-04-26 11:30:20.637523",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_details",
+  "employee",
+  "employee_name",
+  "department",
+  "designation",
+  "column_break_kiej3",
+  "hi",
+  "employee_type",
+  "work_location",
+  "company",
+  "grade",
+  "section_break_kmfjo",
+  "meal_type",
+  "time",
+  "date"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee ",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.employee_type",
+   "fieldname": "employee_type",
+   "fieldtype": "Data",
+   "label": "Employee Type",
+   "options": "\n",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.grade",
+   "fieldname": "grade",
+   "fieldtype": "Data",
+   "label": "Grade",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.working_location",
+   "fieldname": "work_location",
+   "fieldtype": "Data",
+   "label": "Work Location ",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.designation",
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.work_spot",
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "label": "Work Spot",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_kiej3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "employee_details",
+   "fieldtype": "Section Break",
+   "label": "Employee Details "
+  },
+  {
+   "fieldname": "hi",
+   "fieldtype": "Heading"
+  },
+  {
+   "fieldname": "section_break_kmfjo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "meal_type",
+   "fieldtype": "Link",
+   "label": "Meal Type",
+   "options": "Meal Type"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Datetime",
+   "label": "Time"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-08-27 12:55:19.409803",
+ "modified_by": "Administrator",
+ "module": "DONGWOO",
+ "name": "Canteen Checkin",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

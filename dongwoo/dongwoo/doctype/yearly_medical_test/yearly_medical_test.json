@@ -1,0 +1,321 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "MT.####",
+ "creation": "2023-05-03 10:19:36.922798",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_details_section",
+  "employee",
+  "employee_name",
+  "department",
+  "designation",
+  "gender",
+  "employee_type",
+  "column_break_qa5v5",
+  "date",
+  "work_location",
+  "work_spot",
+  "grade",
+  "date_of_birth",
+  "age",
+  "test_report_section",
+  "hemoglobin",
+  "packed_cell_volume",
+  "white_blood_cells",
+  "red_blood_cells",
+  "platelet",
+  "neutrophils",
+  "lymphocytes",
+  "eosinophils",
+  "monocytes",
+  "erythrocyte_sedimentation_rate",
+  "column_break_y10sb",
+  "blood_group",
+  "random_blood_sugar",
+  "urea",
+  "creatinine",
+  "albumin",
+  "suger",
+  "puscells",
+  "epithelial_cells",
+  "red_blood_cell",
+  "urinary_casts",
+  "column_break_7cdme",
+  "crystals",
+  "x_ray",
+  "audio",
+  "pulmonary_function_test",
+  "ecg",
+  "eye",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_details_section",
+   "fieldtype": "Section Break",
+   "label": "Employee Details"
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department ",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.designation",
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation ",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.employment_type",
+   "fieldname": "employee_type",
+   "fieldtype": "Data",
+   "label": "Employee Type ",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.working_location",
+   "fieldname": "work_location",
+   "fieldtype": "Data",
+   "label": "Work Location ",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.work_spot",
+   "fieldname": "work_spot",
+   "fieldtype": "Data",
+   "label": "Work Spot ",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.grade",
+   "fieldname": "grade",
+   "fieldtype": "Data",
+   "label": "Grade ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "Age",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.gender",
+   "fieldname": "gender",
+   "fieldtype": "Data",
+   "label": "Gender ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "test_report_section",
+   "fieldtype": "Section Break",
+   "label": "Test Report "
+  },
+  {
+   "fetch_from": "employee.date_of_birth",
+   "fieldname": "date_of_birth",
+   "fieldtype": "Data",
+   "label": "Date Of Birth",
+   "read_only": 1
+  },
+  {
+   "fieldname": "hemoglobin",
+   "fieldtype": "Float",
+   "label": "Hemoglobin "
+  },
+  {
+   "fieldname": "packed_cell_volume",
+   "fieldtype": "Float",
+   "label": "Packed Cell Volume"
+  },
+  {
+   "fieldname": "white_blood_cells",
+   "fieldtype": "Int",
+   "label": "White Blood Cells "
+  },
+  {
+   "fieldname": "red_blood_cells",
+   "fieldtype": "Float",
+   "label": "Red Blood Cells "
+  },
+  {
+   "fieldname": "platelet",
+   "fieldtype": "Float",
+   "label": "Platelet"
+  },
+  {
+   "fieldname": "neutrophils",
+   "fieldtype": "Int",
+   "label": "Neutrophils "
+  },
+  {
+   "fieldname": "lymphocytes",
+   "fieldtype": "Int",
+   "label": "Lymphocytes"
+  },
+  {
+   "fieldname": "eosinophils",
+   "fieldtype": "Int",
+   "label": "Eosinophils"
+  },
+  {
+   "fieldname": "monocytes",
+   "fieldtype": "Int",
+   "label": "Monocytes"
+  },
+  {
+   "fieldname": "erythrocyte_sedimentation_rate",
+   "fieldtype": "Int",
+   "label": "Erythrocyte Sedimentation Rate"
+  },
+  {
+   "fieldname": "blood_group",
+   "fieldtype": "Select",
+   "label": "Blood Group",
+   "options": "\nA+\nA-\nB+\nB-\nAB+\nAB-\nO+\nO-"
+  },
+  {
+   "fieldname": "random_blood_sugar",
+   "fieldtype": "Float",
+   "label": "Random Blood Sugar"
+  },
+  {
+   "fieldname": "urea",
+   "fieldtype": "Float",
+   "label": "Urea"
+  },
+  {
+   "fieldname": "creatinine",
+   "fieldtype": "Float",
+   "label": "Creatinine"
+  },
+  {
+   "fieldname": "albumin",
+   "fieldtype": "Data",
+   "label": "Albumin "
+  },
+  {
+   "fieldname": "suger",
+   "fieldtype": "Data",
+   "label": "Suger"
+  },
+  {
+   "fieldname": "puscells",
+   "fieldtype": "Data",
+   "label": "Puscells "
+  },
+  {
+   "fieldname": "epithelial_cells",
+   "fieldtype": "Data",
+   "label": "Epithelial Cells "
+  },
+  {
+   "fieldname": "red_blood_cell",
+   "fieldtype": "Data",
+   "label": "Red Blood Cell"
+  },
+  {
+   "fieldname": "urinary_casts",
+   "fieldtype": "Data",
+   "label": "Urinary Casts"
+  },
+  {
+   "fieldname": "crystals",
+   "fieldtype": "Data",
+   "label": "Crystals "
+  },
+  {
+   "fieldname": "x_ray",
+   "fieldtype": "Data",
+   "label": "X Ray"
+  },
+  {
+   "fieldname": "audio",
+   "fieldtype": "Data",
+   "label": "Audio "
+  },
+  {
+   "fieldname": "pulmonary_function_test",
+   "fieldtype": "Data",
+   "label": "Pulmonary Function Test"
+  },
+  {
+   "fieldname": "eye",
+   "fieldtype": "Small Text",
+   "label": "Eye"
+  },
+  {
+   "fieldname": "ecg",
+   "fieldtype": "Data",
+   "label": "ECG"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "column_break_qa5v5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_y10sb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_7cdme",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-05-03 14:23:51.218096",
+ "modified_by": "Administrator",
+ "module": "DONGWOO",
+ "name": "Yearly Medical Test",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

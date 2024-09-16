@@ -1,0 +1,185 @@
+{
+ "actions": [],
+ "autoname": "field:employee",
+ "creation": "2023-05-13 18:48:43.896503",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "department",
+  "desigantion",
+  "date_of_joining",
+  "column_break_7",
+  "workspot",
+  "working_location",
+  "grade",
+  "employee_type",
+  "section_break_7e43e",
+  "requested_relieving_date",
+  "column_break_gl0yt",
+  "relieving_date",
+  "column_break_2ta54",
+  "hod_relieving_date",
+  "need_of_replacement",
+  "section_break_fbj5p",
+  "reason",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee",
+   "unique": 1
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.designation",
+   "fieldname": "desigantion",
+   "fieldtype": "Data",
+   "label": "Desigantion",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.date_of_joining",
+   "fieldname": "date_of_joining",
+   "fieldtype": "Date",
+   "label": "Date of Joining",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee.work_spot",
+   "fieldname": "workspot",
+   "fieldtype": "Data",
+   "label": "Workspot",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.working_location",
+   "fieldname": "working_location",
+   "fieldtype": "Data",
+   "label": "Working Location",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.grade",
+   "fieldname": "grade",
+   "fieldtype": "Data",
+   "label": "Grade",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.employee_type",
+   "fieldname": "employee_type",
+   "fieldtype": "Data",
+   "label": "Employee Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_7e43e",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "requested_relieving_date",
+   "fieldtype": "Date",
+   "label": "Requested Relieving Date"
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role(\"HR User\")",
+   "fieldname": "relieving_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Relieving Date"
+  },
+  {
+   "fieldname": "column_break_2ta54",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:frappe.user.has_role(\"HOD\")",
+   "fieldname": "hod_relieving_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "HOD's Relieving Date"
+  },
+  {
+   "fieldname": "section_break_fbj5p",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Small Text",
+   "label": "Reason"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Resignation Form",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_gl0yt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "need_of_replacement",
+   "fieldtype": "Check",
+   "label": "Need of Replacement"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-05-13 18:53:12.778640",
+ "modified_by": "Administrator",
+ "module": "DONGWOO",
+ "name": "Resignation Form",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

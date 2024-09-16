@@ -1,0 +1,39 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-11-07 16:21:31.179941",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "periodin_yrs",
+  "gross_salary"
+ ],
+ "fields": [
+  {
+   "fieldname": "gross_salary",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Gross Salary"
+  },
+  {
+   "fieldname": "periodin_yrs",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Period(in yrs.)",
+   "options": "Fiscal Year"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-11-08 16:21:55.772505",
+ "modified_by": "Administrator",
+ "module": "DONGWOO",
+ "name": "Salary Gross",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

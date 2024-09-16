@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-11-07 12:05:36.426084",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "report",
+  "employee_type",
+  "attach",
+  "column_break_zdnzb",
+  "start_date",
+  "end_date",
+  "download"
+ ],
+ "fields": [
+  {
+   "depends_on": "eval:doc.report == \"Personnel Record\" || doc.report == 'Organizational Chart'",
+   "fieldname": "employee_type",
+   "fieldtype": "Link",
+   "label": "Employee Type",
+   "options": "Employee Type"
+  },
+  {
+   "depends_on": "eval:doc.report == \"Overall Attendance Summary\" || doc.report == \"Daily Attendance Summary\" || doc.report == \"Today Canteen Count Report\" || doc.report == \"Salary Statement Summary\"  || doc.report == \"Monthly Salary Report\"",
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "depends_on": "eval:doc.report == \"Overall Attendance Summary\" || doc.report == \"Salary Statement Summary\"  || doc.report == \"Monthly Salary Report\"",
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "report",
+   "fieldtype": "Select",
+   "label": "Report",
+   "options": "\nOverall Attendance Summary\nDaily Attendance Summary\nToday Canteen Count Report\nSalary Statement Summary\nMonthly Salary Report\nOrganizational Chart"
+  },
+  {
+   "fieldname": "column_break_zdnzb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.report",
+   "fieldname": "download",
+   "fieldtype": "Button",
+   "label": "Download"
+  },
+  {
+   "depends_on": "attach",
+   "fieldname": "attach",
+   "fieldtype": "Attach",
+   "label": "Attach"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-09-12 16:42:41.234972",
+ "modified_by": "Administrator",
+ "module": "DONGWOO",
+ "name": "Report Dashboard",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

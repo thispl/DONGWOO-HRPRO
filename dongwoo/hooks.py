@@ -94,42 +94,63 @@ app_license = "MIT"
 # ---------------
 # Override standard doctype classes
 
-# override_doctype_class = {
-#	"ToDo": "custom_app.overrides.CustomToDo"
-# }
+override_doctype_class = {
+	"Salary Slip": "dongwoo.dongwoo.overrides.CustomSalarySlip",
+    "Shift Assignment": "dongwoo.dongwoo.overrides.CustomShiftAssignment"
+}
 
 # Document Events
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-#	"*": {
-#		"on_update": "method",
-#		"on_cancel": "method",
-#		"on_trash": "method"
-#	}
-# }
+doc_events = {
+    "Employee":{
+		"validate": ["dongwoo.custom.inactive_employee","dongwoo.custom.emp_type_order"]
+        # "before_rename":"dongwoo.custom.before_rename"
+	},
+    "Attendance":{
+		"on_submit": ["dongwoo.custom.ot_request_creation"]
+        # "before_rename":"dongwoo.custom.before_rename"
+	},
+    "Permission":{
+		"on_submit": ["dongwoo.dongwoo.doctype.permission.permission.att_permission_update"],
+        "on_cancel" : ["dongwoo.dongwoo.doctype.permission.permission .att_permission_cancel"]
+        # "before_rename":"dongwoo.custom.before_rename"
+	},
+
+}
 
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
+scheduler_events = {
 #	"all": [
 #		"dongwoo.tasks.all"
 #	],
-#	"daily": [
-#		"dongwoo.tasks.daily"
-#	],
+	"daily": [
+		"dongwoo.dongwoo.email_reminders.send_birthday_reminders",
+		"dongwoo.dongwoo.email_reminders.send_work_anniversary_reminders",
+        
+	],
 #	"hourly": [
 #		"dongwoo.tasks.hourly"
 #	],
-#	"weekly": [
-#		"dongwoo.tasks.weekly"
-#	],
+	"weekly": [
+		"dongwoo.dongwoo.email_reminders.send_holidays_reminder_in_advance",
+        "dongwoo.dongwoo.doctype.shift_schedule.shift_plan.shift_plan_excel",
+	],
 #	"monthly": [
 #		"dongwoo.tasks.monthly"
 #	],
-# }
+"cron":{
+		"*/25 * * * *" :[
+			'dongwoo.mark_attendance.mark_att',
+            'dongwoo.emaill_alerts1.download',
+            # 'dongwoo.emaill_alerts1.create_background_job_for_attendance_Summary'
+		],
+        "20 09 * * *":'dongwoo.emaill_alerts1.create_background_job_for_attendance_Summary'
+	}
+}
 
 # Testing
 # -------

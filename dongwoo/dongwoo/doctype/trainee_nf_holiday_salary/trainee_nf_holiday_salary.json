@@ -1,0 +1,42 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-26 14:59:15.986839",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "festival_allowance",
+  "holiday_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "festival_allowance",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Festival Allowance",
+   "options": "\nPongal\nDeepavali\nElection\nOther NH/FH Holidays",
+   "reqd": 1
+  },
+  {
+   "fieldname": "holiday_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Holiday Date",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-12-26 16:17:18.941903",
+ "modified_by": "Administrator",
+ "module": "DONGWOO",
+ "name": "Trainee NF Holiday Salary",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

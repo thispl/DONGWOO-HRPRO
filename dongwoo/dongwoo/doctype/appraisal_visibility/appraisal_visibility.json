@@ -1,0 +1,39 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-05-13 10:59:57.585963",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "person",
+  "days_of_visibility"
+ ],
+ "fields": [
+  {
+   "fieldname": "person",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Person"
+  },
+  {
+   "fieldname": "days_of_visibility",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Days of Visibility"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-05-13 11:05:21.547594",
+ "modified_by": "Administrator",
+ "module": "DONGWOO",
+ "name": "Appraisal Visibility",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

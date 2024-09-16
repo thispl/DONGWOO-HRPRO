@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-11-06 13:28:38.795833",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "from_date",
+  "employee_type",
+  "column_break_qflr1",
+  "to_date",
+  "department",
+  "column_break_gphgw",
+  "employeewise",
+  "employee",
+  "submit_attendance"
+ ],
+ "fields": [
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "From Date",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.employeewise == 0 ",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Department",
+   "mandatory_depends_on": "eval:doc.employeewise == 0 ",
+   "options": "Department"
+  },
+  {
+   "fieldname": "column_break_qflr1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "To Date",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.employeewise == 0 ",
+   "fieldname": "employee_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee Type",
+   "mandatory_depends_on": "eval:doc.employeewise == 0 ",
+   "options": "Employee Type"
+  },
+  {
+   "fieldname": "column_break_gphgw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.from_date && doc.to_date && doc.employee_type",
+   "fieldname": "submit_attendance",
+   "fieldtype": "Button",
+   "label": "Submit Attendance"
+  },
+  {
+   "depends_on": "eval:doc.employeewise == 1",
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "mandatory_depends_on": "eval:doc.employeewise == 1",
+   "options": "Employee"
+  },
+  {
+   "default": "0",
+   "fieldname": "employeewise",
+   "fieldtype": "Check",
+   "label": "Employeewise"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-11-06 16:23:58.077459",
+ "modified_by": "Administrator",
+ "module": "DONGWOO",
+ "name": "Attendance Submission Tool",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

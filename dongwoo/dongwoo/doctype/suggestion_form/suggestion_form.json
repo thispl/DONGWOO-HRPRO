@@ -1,0 +1,176 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "SF.####",
+ "creation": "2023-05-10 11:15:01.037012",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "employee",
+  "employee_name",
+  "department",
+  "designation",
+  "issue_date",
+  "column_break_fpmoj",
+  "employee_type",
+  "work_spot",
+  "work_location",
+  "grade",
+  "letter_head",
+  "section_break_8ygqs",
+  "present_situation",
+  "your_new_suggestion",
+  "advantages_in_your_new_suggestion",
+  "section_break_ba9tf",
+  "justification",
+  "column_break_lxyav",
+  "suggestion_rewarded"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee ",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department ",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.designation",
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "label": "Designation ",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.work_spot",
+   "fieldname": "work_spot",
+   "fieldtype": "Data",
+   "label": "Work Spot",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.working_location",
+   "fieldname": "work_location",
+   "fieldtype": "Data",
+   "label": "Work Location ",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.grade",
+   "fieldname": "grade",
+   "fieldtype": "Data",
+   "label": "Grade",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.employment_type",
+   "fieldname": "employee_type",
+   "fieldtype": "Data",
+   "label": "Employee Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_fpmoj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "present_situation",
+   "fieldtype": "Small Text",
+   "label": "Present Situation "
+  },
+  {
+   "fieldname": "your_new_suggestion",
+   "fieldtype": "Small Text",
+   "label": "Your New Suggestion "
+  },
+  {
+   "fieldname": "advantages_in_your_new_suggestion",
+   "fieldtype": "Small Text",
+   "label": "Advantages In Your New Suggestion "
+  },
+  {
+   "fieldname": "section_break_8ygqs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "DWSI",
+   "fieldname": "letter_head",
+   "fieldtype": "Link",
+   "label": "Letter Head",
+   "options": "Letter Head"
+  },
+  {
+   "fieldname": "issue_date",
+   "fieldtype": "Date",
+   "label": "Issue Date"
+  },
+  {
+   "fieldname": "justification",
+   "fieldtype": "Data",
+   "label": "Justification"
+  },
+  {
+   "fieldname": "suggestion_rewarded",
+   "fieldtype": "Data",
+   "label": "Suggestion Rewarded"
+  },
+  {
+   "fieldname": "section_break_ba9tf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_lxyav",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-07-05 11:17:10.261851",
+ "modified_by": "Administrator",
+ "module": "DONGWOO",
+ "name": "Suggestion Form",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

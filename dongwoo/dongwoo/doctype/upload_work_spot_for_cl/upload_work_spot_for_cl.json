@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{contractor}-{date}",
+ "creation": "2023-11-24 13:53:47.466576",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "contractor",
+  "column_break_cuqet",
+  "date",
+  "column_break_msqeu",
+  "get_template",
+  "column_break_tdhlh",
+  "attach",
+  "column_break_xj7us",
+  "upload"
+ ],
+ "fields": [
+  {
+   "fieldname": "contractor",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Contractor",
+   "options": "Contractor",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_cuqet",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_msqeu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "get_template",
+   "fieldtype": "Button",
+   "label": "Get Template"
+  },
+  {
+   "fieldname": "column_break_tdhlh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "upload",
+   "fieldtype": "Button",
+   "label": "Upload"
+  },
+  {
+   "fieldname": "column_break_xj7us",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attach",
+   "fieldtype": "Attach",
+   "label": "Attach"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-24 16:02:58.024500",
+ "modified_by": "Administrator",
+ "module": "DONGWOO",
+ "name": "Upload Work Spot for CL",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,183 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-12-26 15:03:05.090931",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "staff_nf_holiday_salary1",
+  "pongal_allowance",
+  "column_break_bspta",
+  "deepavali_allowance",
+  "column_break_piob3",
+  "election_allowance",
+  "column_break_o6are",
+  "other_allowance",
+  "worker_nf_holiday_salary1_section",
+  "pongal_allowance1",
+  "column_break_6fmeh",
+  "deepavali_allowance1",
+  "column_break_patjg",
+  "election_allowance1",
+  "column_break_3f9ub",
+  "other_allowance1",
+  "trainee_nf_holiday_salary1",
+  "pongal_allowance2",
+  "column_break_2hale",
+  "deepavali_allowance2",
+  "column_break_9p9mc",
+  "election_allowance2",
+  "column_break_yquag",
+  "other_allowance2",
+  "section_break_3rmh4",
+  "trainee_nf_holiday_salary"
+ ],
+ "fields": [
+  {
+   "fieldname": "trainee_nf_holiday_salary",
+   "fieldtype": "Table",
+   "options": "Trainee NF Holiday Salary"
+  },
+  {
+   "fieldname": "worker_nf_holiday_salary1_section",
+   "fieldtype": "Section Break",
+   "label": "Worker NH/FH Holidays Salary"
+  },
+  {
+   "fieldname": "staff_nf_holiday_salary1",
+   "fieldtype": "Section Break",
+   "label": "Staff NH/FH Holidays Salary"
+  },
+  {
+   "fieldname": "trainee_nf_holiday_salary1",
+   "fieldtype": "Section Break",
+   "label": "Trainee NH/FH Holidays Salary"
+  },
+  {
+   "fieldname": "pongal_allowance",
+   "fieldtype": "Currency",
+   "label": "Pongal Allowance"
+  },
+  {
+   "fieldname": "column_break_bspta",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "deepavali_allowance",
+   "fieldtype": "Currency",
+   "label": "Deepavali Allowance"
+  },
+  {
+   "fieldname": "election_allowance",
+   "fieldtype": "Currency",
+   "label": "Election Allowance"
+  },
+  {
+   "fieldname": "pongal_allowance1",
+   "fieldtype": "Currency",
+   "label": "Pongal Allowance"
+  },
+  {
+   "fieldname": "column_break_6fmeh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "deepavali_allowance1",
+   "fieldtype": "Currency",
+   "label": "Deepavali Allowance"
+  },
+  {
+   "fieldname": "column_break_patjg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "election_allowance1",
+   "fieldtype": "Currency",
+   "label": "Election Allowance"
+  },
+  {
+   "fieldname": "column_break_piob3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pongal_allowance2",
+   "fieldtype": "Currency",
+   "label": "Pongal Allowance"
+  },
+  {
+   "fieldname": "column_break_2hale",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "deepavali_allowance2",
+   "fieldtype": "Currency",
+   "label": "Deepavali Allowance"
+  },
+  {
+   "fieldname": "column_break_9p9mc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "election_allowance2",
+   "fieldtype": "Currency",
+   "label": "Election Allowance"
+  },
+  {
+   "fieldname": "section_break_3rmh4",
+   "fieldtype": "Section Break",
+   "label": "NH/FH Holidays"
+  },
+  {
+   "fieldname": "column_break_o6are",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "other_allowance",
+   "fieldtype": "Currency",
+   "label": "Other Allowance"
+  },
+  {
+   "fieldname": "column_break_3f9ub",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "other_allowance1",
+   "fieldtype": "Currency",
+   "label": "Other Allowance"
+  },
+  {
+   "fieldname": "column_break_yquag",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "other_allowance2",
+   "fieldtype": "Currency",
+   "label": "Other Allowance"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-12-26 16:17:50.629929",
+ "modified_by": "Administrator",
+ "module": "DONGWOO",
+ "name": "NH and FH Holidays Salary",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

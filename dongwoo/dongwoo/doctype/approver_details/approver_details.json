@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-05-10 13:04:23.735949",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "level",
+  "level_of_approver_id",
+  "approver_name",
+  "user"
+ ],
+ "fields": [
+  {
+   "fieldname": "level",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Level "
+  },
+  {
+   "fieldname": "approver_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Approver Name"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "User ",
+   "options": "User"
+  },
+  {
+   "fieldname": "level_of_approver_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Level of Approver ID",
+   "options": "Employee"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-05-10 17:05:47.053222",
+ "modified_by": "Administrator",
+ "module": "DONGWOO",
+ "name": "Approver Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

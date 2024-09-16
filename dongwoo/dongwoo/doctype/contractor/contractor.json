@@ -1,0 +1,55 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "field:contractor",
+ "creation": "2023-11-24 10:15:04.812089",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "contractor",
+  "contractor_full_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "contractor",
+   "fieldtype": "Data",
+   "label": "Contractor Short Code",
+   "unique": 1
+  },
+  {
+   "fieldname": "contractor_full_name",
+   "fieldtype": "Data",
+   "label": "Contractor Full Name"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-11-24 14:00:54.056075",
+ "modified_by": "Administrator",
+ "module": "DONGWOO",
+ "name": "Contractor",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

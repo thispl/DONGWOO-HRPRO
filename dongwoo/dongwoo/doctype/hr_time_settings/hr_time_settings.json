@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-05-13 11:50:31.075445",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "appraisal_section",
+  "appraisal_start_date",
+  "appraisal_end_date",
+  "create_appraisal"
+ ],
+ "fields": [
+  {
+   "fieldname": "appraisal_section",
+   "fieldtype": "Section Break",
+   "label": "Appraisal"
+  },
+  {
+   "fieldname": "appraisal_start_date",
+   "fieldtype": "Date",
+   "label": "Appraisal Start Date"
+  },
+  {
+   "fieldname": "appraisal_end_date",
+   "fieldtype": "Date",
+   "label": "Appraisal End Date"
+  },
+  {
+   "fieldname": "create_appraisal",
+   "fieldtype": "Button",
+   "label": "Create Appraisal"
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-05-13 15:37:55.583381",
+ "modified_by": "Administrator",
+ "module": "DONGWOO",
+ "name": "HR Time Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,82 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{date}-{vehicle}",
+ "creation": "2023-07-06 18:14:48.016246",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "column_break_y2eqd",
+  "vehicle",
+  "column_break_8zp0x",
+  "vehicle_type",
+  "section_break_kqnsg",
+  "checklist"
+ ],
+ "fields": [
+  {
+   "fieldname": "checklist",
+   "fieldtype": "Table",
+   "label": "Checklist",
+   "options": "Checklist Table"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "label": "Vehicle",
+   "options": "Vehicle"
+  },
+  {
+   "fetch_from": "vehicle.vehicle_type",
+   "fieldname": "vehicle_type",
+   "fieldtype": "Data",
+   "label": "Vehicle Type"
+  },
+  {
+   "fieldname": "column_break_8zp0x",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_y2eqd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_kqnsg",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-07-06 20:44:32.178557",
+ "modified_by": "Administrator",
+ "module": "DONGWOO",
+ "name": "Vehicle Checklist Entry",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
